@@ -3,7 +3,7 @@
   var stringNomes = ['John Doe', 'Peter Parker', 'Mary Jane Watson-Parker', 'James Doe', 'John Elvis Doe', 'Jane Doe', 'Penny Parker'];
   //guarda nome do dominio
   var company ="@company.com"
-
+	var usernames = [];
   //Repetição para separação e escrita dos nomes
   for (i = 0; i < stringNomes.length; i++) {
           // Guarda os nomes e separa-os
@@ -39,6 +39,8 @@
                       // monta nome + número da linha dominio
                       console.log(compemail);
           }
-
+usernames.forEach(function (el) {
+    document.getElementById('email').innerHTML += '<p>' + el + '</p>';
+})
 
   }
