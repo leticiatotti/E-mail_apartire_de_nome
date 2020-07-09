@@ -38,8 +38,9 @@
 
                       // monta nome + número da linha dominio
                       console.log(compemail);
-          }
 
+          }
+compemail.textContent = compemail;
 
   }
 
