@@ -39,8 +39,9 @@
                       // monta nome + número da linha dominio
                       console.log(compemail);
           }
-usernames.forEach(function (el) {
-    document.getElementById('email').innerHTML += '<p>' + el + '</p>';
-})
+
 
   }
+  usernames.forEach(function (el) {
+    document.getElementById('email').innerHTML += '<p>' + el + '</p>';
+})
