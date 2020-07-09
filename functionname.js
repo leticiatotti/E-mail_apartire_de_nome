@@ -42,6 +42,4 @@
 
 
   }
-  usernames.forEach(function (el) {
-    document.getElementById('email').innerHTML += '<p>' + el + '</p>';
-})
+
