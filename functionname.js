@@ -19,7 +19,8 @@ for (i = 0; i < stringNomes.length; i++) {
     var all = (terNome.toLowerCase() + "." + priNome.toLowerCase() + "." + segNome.toLowerCase());
     // trata tirando hifen dos nomes
     all = all.replace(/-/g, "");
-    // monta nome + dominio
+    // monta nome + dominio dos nomes compostos por 3
+    document.getElementById('email').innerHTML += '<p>'+ compemail + '</p>';
     console.log(all + company);
     // Separa o primeiro e segundo nome caso tenha apenas 2
   } else {
@@ -32,7 +33,8 @@ for (i = 0; i < stringNomes.length; i++) {
     // trata tirando hifen dos nomes
     all = all.replace(/-/g, "");
     compemail = all + i + company;
-    // monta nome + número da linha dominio
+    // monta nome + número da linha dominio nomes compostos por 2
     console.log(compemail);
+    document.getElementById('email').innerHTML += '<p>'+ compemail + '</p>';
     }
 }
