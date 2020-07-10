@@ -12,6 +12,7 @@ for (i = 0; i < stringNomes.length; i++) {
     var priNome = cortar[0];
     var segNome = cortar[1];
     var terNome = cortar[2];
+    var fullName3 = priNome + " " + segNome + " "+ terNome;
     // Separa apenas primera lentra do Nome e nome do meio
     priNome = priNome.slice("", 1);
     segNome = segNome.slice("", 1);
@@ -20,12 +21,12 @@ for (i = 0; i < stringNomes.length; i++) {
     // trata tirando hifen dos nomes
     all = all.replace(/-/g, "");
     // monta nome + dominio dos nomes compostos por 3
-    document.getElementById('email').innerHTML += '<p>'+ compemail + '</p>';
-    console.log(all + company);
+    document.getElementById('email').innerHTML += '<p><b>' + fullName3 + ":</b>" + " " + all + company + '</p>';
     // Separa o primeiro e segundo nome caso tenha apenas 2
   } else {
     var priNome = cortar[0];
     var segNome = cortar[1];
+    var fullName2 = priNome + " " + segNome;
     // Separa apenas primera lentra do Nome
     priNome = priNome.slice("", 1);
     // guarda tudo em ordem e transforma em minusc
@@ -34,7 +35,6 @@ for (i = 0; i < stringNomes.length; i++) {
     all = all.replace(/-/g, "");
     compemail = all + i + company;
     // monta nome + número da linha dominio nomes compostos por 2
-    console.log(compemail);
-    document.getElementById('email').innerHTML += '<p>'+ compemail + '</p>';
+    document.getElementById('email').innerHTML += '<p><b>' + fullName2 + ":</b>" + " " + compemail + '</p>';
     }
 }
